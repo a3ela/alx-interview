@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 
-"""determine the few number of coins needed to meet the total"""
+""" Contains makeChange function"""
 
-def makeChhange(coin, total):
-    """
-    Return: fewest number of coins needed to meet total
-        if total is 0 or less return 0
-        if total cannot be meet by number of coins you return 1
-    """
 
+def makeChange(coins, total):
+    """
+    Returns: fewest number of coins needed to meet total
+        If total is 0 or less, return 0
+        If total cannot be met by any number of coins you have, return -1
+    """
     if not coins or coins is None:
         return -1
     if total <= 0:
